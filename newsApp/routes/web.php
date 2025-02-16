@@ -17,3 +17,9 @@ use App\Http\Controllers\BiodataController;
 Route::get('/', [IndexController::class,"index"]);
 Route::get('/register', [BiodataController::class,"register"])->name('register');
 Route::post('/home', [BiodataController::class,"home"]);
+Route::get('/data-table', function(){
+    return view ('pages.data-table');
+});
+Route::get('/table', function(){
+    return view ('pages.table');
+});

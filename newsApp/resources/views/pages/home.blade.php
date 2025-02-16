@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
-<body>
-    <h1>SELAMAT DATANG {{ $firstname }} {{ $lastname }}!</h1> <br>
-    <h3>Terima kasih telah bergabung di Sanberbook. Social Media kita bersama!</h3>
-</body>
-</html>
+
+
+@extends('layouts.master')
+
+@section('title')
+Halaman Home
+@endsection
+
+@section('content')
+        <h1>SELAMAT DATANG {{ $firstname }} {{ $lastname }}!</h1> <br>
+        <h3>Terima kasih telah bergabung di Sanberbook. Social Media kita bersama!</h3>
+@endsection
